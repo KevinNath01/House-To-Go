@@ -56,16 +56,16 @@ include ("Connect.php");
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="user.php">Home</a></li>
-          <li class="active"><a href="#portfolio">Products</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="Products.php">Products</a></li>
+          <li><a href="Team.html">Team</a></li>
           <li><a href="profile.php">Profile</a></li>
               
-          <li><a href="#contact">Contact</a></li>
+          
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="Login_v1.html" class="get-started-btn scrollto">Login</a>
+      <a href="logout.php" class="get-started-btn scrollto">Logout</a>
 
     </div>
   </header><!-- End Header -->

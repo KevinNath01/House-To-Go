@@ -122,7 +122,7 @@ session_start();
 <div class="form-group">
   <label class="col-md-4 control-label" for="nama">Member Id</label>  
   <div class="col-md-4">
-  <input id="id_Member" name="id_Member" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?= $_SESSION['id_Member']?>">
+  <input id="id_Member" name="id_Member" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?= $_SESSION['id_Member']?>" readonly>
     
   </div>
 </div>

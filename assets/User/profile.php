@@ -282,11 +282,12 @@ include ("Connect.php");
                 <th class="column6">Project Date</th>
                 <th class="column7"></th>
                 <th class="column7"></th>
+                <th class="column7"></th>
 							</tr>
 						</thead>
 						<tbody>
             <?php 
-              $id_Member = $_SESSION['id_Member'] ;
+              $id_Member = $_SESSION['id_Member'];
               $query = "SELECT * FROM produk  where id_Member='$id_Member'";
               $result = mysqli_query($db,$query); 
               if(mysqli_num_rows($result) > 0 )
@@ -301,9 +302,11 @@ include ("Connect.php");
 									  <td class="column5"><?php echo $row["kategori"];?></td>
                     <td class="column6"><?php echo $row["tanggal_projek"];?></td>
                     <td class="column7"><a href="hapus.php?id_produk='<?php echo $row["id_produk"];?>'"class="btn btn-info" style="padding-top: 5px;padding-bottom: 5px;
-                    padding-left:15px;padding-right:15px;">Hapus</a></td>
+                    padding-left:15px;padding-right:15px;">Delete</a></td>
                     <td class="column7"><a href="update_page.php?id_produk='<?php echo $row["id_produk"];?>'"class="btn btn-info" style="padding-top: 5px;padding-bottom: 5px;
                     padding-left:15px;padding-right:15px;">Edit</a></td>
+                    <td class="column7"><a href="portfolio-details.php?id_produk='<?php echo $row["id_produk"];?>'"class="btn btn-info" style="padding-top: 5px;padding-bottom: 5px;
+                    padding-left:15px;padding-right:15px;">Preview</a></td>
                   </tr>
                 <?php
                 } 

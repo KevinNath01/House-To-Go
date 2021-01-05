@@ -13,7 +13,7 @@ $result = mysqli_query($db,$query);
 if($result)
 {
 // mengalihkan halaman kembali ke index.php
-echo '<script>window.alert("deleted");window.location.href = "profile.php";</script>';
+echo '<script>window.alert("Product Deleted");window.location.href = "profile.php";</script>';
 }
 else{
 echo 'gagal';

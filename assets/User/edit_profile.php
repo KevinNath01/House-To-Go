@@ -174,7 +174,7 @@ include("Connect.php");
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Id Member</label>
-                        <input type="text" id="id_Member" name="id_Member" class="form-control form-control-alternative" value="<?php echo $row['id_Member'];?>">
+                        <input type="text" id="id_Member" name="id_Member" class="form-control form-control-alternative" value="<?php echo $row['id_Member'];?>" readonly>
                       </div>
                     </div>
                   </div>

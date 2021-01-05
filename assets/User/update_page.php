@@ -130,7 +130,7 @@ if(mysqli_num_rows($result) > 0 )
 <div class="form-group">
   <label class="col-md-4 control-label" for="nama">Member Id</label>  
   <div class="col-md-4">
-  <input id="id_Member" name="id_Member" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?= $_SESSION['id_Member']?>">
+  <input id="id_Member" name="id_Member" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?= $_SESSION['id_Member']?>" readonly>
     
   </div>
 </div>
@@ -138,7 +138,7 @@ if(mysqli_num_rows($result) > 0 )
 <div class="form-group">
   <label class="col-md-4 control-label" for="nama">Id Product</label>  
   <div class="col-md-4">
-  <input id="id_produk" name="id_produk" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?php echo $row['id_produk'];?>">
+  <input id="id_produk" name="id_produk" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text" value="<?php echo $row['id_produk'];?>" readonly>
     
   </div>
 </div>
